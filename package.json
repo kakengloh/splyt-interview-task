@@ -1,0 +1,15 @@
+{
+  "name": "splyt-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-deps": "cd server && npm i && cd ../client && npm i",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start",
+    "test:server": "cd server && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
