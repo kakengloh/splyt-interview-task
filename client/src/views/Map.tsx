@@ -40,7 +40,7 @@ const Map = () => {
     const [currentLocation, setCurrentLocation] = useState(nearestLocation)
     const [drivers, setDrivers] = useState<IDriver[]>([])
     const [driversCount, setDriversCount] = useState(10)
-    const setDriversCountDebounced = useRef(debounce(setDriversCount, 150))
+    const setDriversCountDebounced = useRef(debounce(setDriversCount, 50))
 
     const listDrivers = async () => {
         const { data } = await axios.get('http://localhost:5000/drivers', {
